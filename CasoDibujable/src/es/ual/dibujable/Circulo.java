@@ -1,9 +1,11 @@
 package es.ual.dibujable;
 
-public class Circulo extends Geometria {
+public class Circulo implements Geometria {
 	static int numCirculos = 0;
 	public static final double PI = 3.14159265358979323846;
-	public double x, y, r;
+	protected double x;
+	protected double y;
+	protected double r;
 
 	public Circulo(double x, double y, double r) {
 		this.x = x;
@@ -24,10 +26,12 @@ public class Circulo extends Geometria {
 		this(0.0, 0.0, 1.0);
 	}
 
+	@Override
 	public double perimetro() {
 		return 2.0 * PI * r;
 	}
 
+	@Override
 	public double area() {
 		return PI * r * r;
 	}
