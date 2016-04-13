@@ -6,12 +6,13 @@ import java.awt.Panel;
 import java.util.Iterator;
 import java.util.List;
 
+@SuppressWarnings("serial")
 public class PanelDibujo extends Panel {
 	// variable miembro
-	private List v;
+	private transient List<Geometria> v;
 
 	// constructor
-	public PanelDibujo(List va) {
+	public PanelDibujo(List<Geometria> va) {
 		super(new FlowLayout());
 		this.v = va;
 	}
@@ -20,7 +21,7 @@ public class PanelDibujo extends Panel {
 	// redefinición del método paint()
 	public void paint(Graphics g) {
 		Dibujable dib;
-		Iterator it;
+		Iterator<Geometria> it;
 		it = v.iterator();
 		while (it.hasNext()) {
 			dib = (Dibujable) it.next();

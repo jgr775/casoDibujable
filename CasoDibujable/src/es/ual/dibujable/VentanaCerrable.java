@@ -3,6 +3,7 @@ package es.ual.dibujable;
 import java.awt.*;
 import java.awt.event.*;
 
+@SuppressWarnings("serial")
 class VentanaCerrable extends Frame implements WindowListener {
 	// constructores
 	public VentanaCerrable() {
@@ -18,36 +19,36 @@ class VentanaCerrable extends Frame implements WindowListener {
 	@Override
 	// métodos de la interface WindowsListener
 	public void windowActivated(WindowEvent e) {
-		throw new UnsupportedOperationException();
+		//No necesita sobreescribir el método
 	}
 
 	@Override
 	public void windowClosed(WindowEvent e) {
-		 throw new UnsupportedOperationException();
+		//No necesita sobreescribir el método
 	}
 
 	@Override
 	public void windowClosing(WindowEvent e) {
-		System.exit(0);
+		this.dispose();
 	}
 
 	@Override
 	public void windowDeactivated(WindowEvent e) {
-		 throw new UnsupportedOperationException();
+		//No necesita sobreescribir el método
 	}
 
 	@Override
 	public void windowDeiconified(WindowEvent e) {
-		 throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public void windowIconified(WindowEvent e) {
-		 throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public void windowOpened(WindowEvent e) {
-		 throw new UnsupportedOperationException();
+		//No necesita sobreescribir el método
 	}
 } // fin de la clase VentanaCerrable

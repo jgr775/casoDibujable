@@ -1,8 +1,6 @@
 package es.ual.dibujable;
 
 public class Rectangulo implements Geometria {
-	// definición de variables miembro de la claes
-	private static int numRectangulos = 0;
 	protected double x1;
 	protected double y1;
 	protected double x2;
@@ -14,7 +12,6 @@ public class Rectangulo implements Geometria {
 		x2 = p2x;
 		y1 = p1y;
 		y2 = p2y;
-		numRectangulos++;
 	}
 
 	public Rectangulo() {

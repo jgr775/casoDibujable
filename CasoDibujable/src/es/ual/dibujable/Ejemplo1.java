@@ -24,7 +24,7 @@ public class Ejemplo1 {
 		c = Circulo.elMayor(c1, c2);
 		logger.log(Level.INFO,"El mayor radio es " + c.r + ".");
 		VentanaCerrable ventana = new VentanaCerrable("Ventana abierta al mundo...");
-		ArrayList v = new ArrayList();
+		ArrayList<Geometria> v = new ArrayList<>();
 		CirculoGrafico cg1 = new CirculoGrafico(200, 200, 100, Color.red);
 		CirculoGrafico cg2 = new CirculoGrafico(300, 200, 100, Color.blue);
 		RectanguloGrafico rg = new RectanguloGrafico(50, 50, 450, 350, Color.green);
